@@ -25,20 +25,25 @@ class Myapp extends StatelessWidget {
         centerTitle: true,
 
       ),
-      body: Column(
+      body:Column(
+
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget> [
-              Text('welcome'), FlatButton(onPressed: (){}, child: Text('click'),
-              color: Colors.amber,),
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget> [
+                  Text('welcome'), FlatButton(onPressed: (){}, child: Text('click'),
+                  color: Colors.amber,),
 
 
-              Container(color:Colors.cyan ,child: Text('inside a container'),),
-            ],
-          ),
+                  Container(color:Colors.cyan ,child: Text('inside a container'),),
+                ],
+              ),
+
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget> [
               Text('welcome'), FlatButton(onPressed: (){}, child: Text('click'),
                 color: Colors.amber,),
@@ -49,6 +54,7 @@ class Myapp extends StatelessWidget {
           ),
         ],
       ),
+
 
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.green,
