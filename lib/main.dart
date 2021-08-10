@@ -25,13 +25,29 @@ class Myapp extends StatelessWidget {
         centerTitle: true,
 
       ),
-      body: Padding (
-        padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
-        child: Text('hello everyone',
-            style: TextStyle(
-              backgroundColor: Colors.amber
-            )),
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget> [
+              Text('welcome'), FlatButton(onPressed: (){}, child: Text('click'),
+              color: Colors.amber,),
 
+
+              Container(color:Colors.cyan ,child: Text('inside a container'),),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget> [
+              Text('welcome'), FlatButton(onPressed: (){}, child: Text('click'),
+                color: Colors.amber,),
+
+
+              Container(color:Colors.cyan ,child: Text('inside a container'),),
+            ],
+          ),
+        ],
       ),
 
       floatingActionButton: FloatingActionButton(
