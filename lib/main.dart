@@ -25,19 +25,13 @@ class Myapp extends StatelessWidget {
         centerTitle: true,
 
       ),
-      body: Container(
-        margin: EdgeInsets.all(20.0),
-        //padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10.0),
-        color: Colors.green,
-        child: Center(
-            child: RaisedButton.icon(
+      body: Padding (
+        padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+        child: Text('hello everyone',
+            style: TextStyle(
+              backgroundColor: Colors.amber
+            )),
 
-                color: Colors.amber,
-                onPressed: (){},
-                icon: Icon(Icons.email),
-                label: Text('mail me'))
-
-        ),
       ),
 
       floatingActionButton: FloatingActionButton(
